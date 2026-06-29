@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morrison Institute for Decentralism</title>
+<meta name="description" content="A 501(c)(3) foundation advancing education and research in decentralized technology.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #07101f;
+    --surface: #0c1929;
+    --border: #172438;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --text: #dde4f0;
+    --muted: #5c7299;
+    --white: #f0f4ff;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+  }
+  .container {
+    max-width: 580px;
+    width: 100%;
+    text-align: center;
+  }
+  .logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .logo-mark { width: 96px; height: 96px; }
+  .logo-acronym {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.45em;
+    color: var(--accent-light);
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+  .logo-name {
+    font-size: 1.55rem;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    line-height: 1.35;
+  }
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--border);
+    margin: 0 auto 2.25rem;
+  }
+  .tagline {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .about {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  footer {
+    margin-top: 4rem;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+  @media (min-width: 560px) {
+    .logo-name { font-size: 1.85rem; }
+    .logo-mark { width: 112px; height: 112px; }
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+  <div class="logo-wrap">
+    <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Morrison Institute for Decentralism logo">
+      <!-- Outer guide circle -->
+      <circle cx="50" cy="50" r="47" fill="none" stroke="#172438" stroke-width="0.75"/>
+      <!-- Pentagon vertices (r=44):
+           0 top:        50, 6
+           1 top-right:  91.8, 36
+           2 bot-right:  77.0, 88
+           3 bot-left:   23.0, 88
+           4 top-left:    8.2, 36
+      -->
+      <!-- Outer ring lines -->
+      <line x1="50" y1="6"   x2="91.8" y2="36"  stroke="#3b82f6" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>
+      <line x1="91.8" y1="36" x2="77"  y2="88"  stroke="#3b82f6" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>
+      <line x1="77" y1="88"  x2="23"   y2="88"  stroke="#3b82f6" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>
+      <line x1="23" y1="88"  x2="8.2"  y2="36"  stroke="#3b82f6" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>
+      <line x1="8.2" y1="36" x2="50"   y2="6"   stroke="#3b82f6" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>
+      <!-- Skip-one inner connections (pentagram web) -->
+      <line x1="50" y1="6"   x2="77"   y2="88"  stroke="#3b82f6" stroke-width="0.85" stroke-linecap="round" opacity="0.22"/>
+      <line x1="50" y1="6"   x2="23"   y2="88"  stroke="#3b82f6" stroke-width="0.85" stroke-linecap="round" opacity="0.22"/>
+      <line x1="91.8" y1="36" x2="23"  y2="88"  stroke="#3b82f6" stroke-width="0.85" stroke-linecap="round" opacity="0.22"/>
+      <line x1="91.8" y1="36" x2="8.2" y2="36"  stroke="#3b82f6" stroke-width="0.85" stroke-linecap="round" opacity="0.22"/>
+      <line x1="77" y1="88"  x2="8.2"  y2="36"  stroke="#3b82f6" stroke-width="0.85" stroke-linecap="round" opacity="0.22"/>
+      <!-- Nodes -->
+      <circle cx="50"  cy="6"   r="4.5" fill="#60a5fa"/>
+      <circle cx="91.8" cy="36" r="3.8" fill="#3b82f6"/>
+      <circle cx="77"  cy="88"  r="3.8" fill="#3b82f6"/>
+      <circle cx="23"  cy="88"  r="3.8" fill="#3b82f6"/>
+      <circle cx="8.2" cy="36"  r="3.8" fill="#3b82f6"/>
+    </svg>
+
+    <div>
+      <div class="logo-acronym">MIFD</div>
+      <div class="logo-name">Morrison Institute<br>for Decentralism</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="tagline">
+    Advancing education and research in decentralized technology.
+  </p>
+
+  <p class="about">
+    A 501(c)(3) non-profit foundation, established in 2021 by Brett and Sima Morrison.
+    We support the development of knowledge and resources that empower individuals
+    through decentralized systems and technology.
+  </p>
+
+  <footer>
+    &copy; 2021&ndash;2026 Morrison Institute for Decentralism &nbsp;&middot;&nbsp; 501(c)(3) Non-Profit Organization
+  </footer>
+
+</main>
+</body>
+</html>
